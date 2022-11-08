@@ -3,7 +3,7 @@ const app = express()
 const port = 3000 
 
 app.get("/pokemons", (req, res) => {
-  console.log("HAI");
+  console.log("HAIIIII");
   res.status(200).json([{
     id: 1, 
     name: "Pikachoi"
@@ -19,7 +19,7 @@ app.patch("/pokemons/:id", (req, res) => {
 })
 
 app.get("/pokemons/:id", (req, res) => {
-  console.log("HAI");
+  console.log("HAIIIIII");
   res.status(200).json([{
     id: 1, 
     name: "Pikachoi"
@@ -31,5 +31,5 @@ app.post("/pokemons", (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log("Aplikasi berjalan");
+  console.log("Aplikasi berjalan 40000");
 })

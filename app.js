@@ -14,11 +14,9 @@ app.put("/pokemons/:id", (req, res) => {
   res.status(200).json({message: "Update pokemon PUT"})
 })
 
-
 app.patch("/pokemons/:id", (req, res) => {
   res.status(200).json({message: "Update pokemon PATCH"})
 })
-
 
 app.get("/pokemons/:id", (req, res) => {
   console.log("HAI");

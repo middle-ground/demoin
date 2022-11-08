@@ -21,6 +21,10 @@ app.post("/pokemons", (req, res) => {
   res.status(201).json({message: "Sucess add pokemon"})
 })
 
+app.get("/courses", (req, res) => {
+  res.status(200).json([])
+})
+
 app.listen(port, () => {
   console.log("Aplikasi berjalan 40000");
 })

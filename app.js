@@ -18,6 +18,10 @@ app.get("/pokemons/:id", (req, res) => {
   }])
 })
 
+app.post("/pokemons", (req, res) => {
+  res.status(201).json({message: "Sucess add pokemon"})
+})
+
 app.listen(port, () => {
   console.log("Aplikasi berjalan");
 })
